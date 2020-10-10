@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -31,6 +32,7 @@ public class App2Test {
     }
 
     @Test
+    @Ignore
     public void attachment2() throws IOException {
         Path file = Paths.get("hello.txt");
         List<String> linesInMemory = Collections.singletonList("HEY HEY");
@@ -75,6 +77,7 @@ public class App2Test {
     }
 
     @Test
+    @Ignore
     public void attachment6() throws IOException {
         Path file = Paths.get("hello.txt");
         List<String> linesInMemory = Collections.singletonList("HEY HEY");

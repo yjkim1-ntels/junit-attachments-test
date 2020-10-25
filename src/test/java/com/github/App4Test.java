@@ -54,7 +54,7 @@ public class App4Test {
 
         System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
 
-        assertThat(false, is(true));
+        assertssThat(false, is(true));
     }
 
     @Test

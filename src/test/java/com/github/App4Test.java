@@ -10,6 +10,7 @@ import java.util.List;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import static com.github.App2Test.printLotsToStdOut;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -27,6 +28,8 @@ public class App4Test {
         Files.write(file, linesInMemory, StandardCharsets.UTF_8);
 
         System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
+
+        printLotsToStdOut();
         
         assertThat(false, is(true));
     }

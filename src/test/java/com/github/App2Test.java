@@ -49,9 +49,17 @@ public class App2Test {
         List<String> linesInMemory = Collections.singletonList("HEY HEY");
         Files.write(file, linesInMemory, StandardCharsets.UTF_8);
 
-        System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
+        printLotsToStdOut();
 
         assertThat(false, is(true));
+    }
+
+    public static void printLotsToStdOut() {
+        String s = "a";
+        int n = 100;
+        for (int i = 0; i < 100; i++) {
+            System.out.println(String.join("", Collections.nCopies(n, s)));
+        }
     }
 
     @Test

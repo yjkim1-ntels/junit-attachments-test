@@ -10,6 +10,7 @@ import java.util.List;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import static com.github.App2Test.printLotsToStdOut;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -26,7 +27,7 @@ public class App3Test {
         List<String> linesInMemory = Collections.singletonList("HEY HEY");
         Files.write(file, linesInMemory, StandardCharsets.UTF_8);
 
-        System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
+        printLotsToStdOut();
         
         assertThat(false, is(true));
     }
@@ -51,6 +52,8 @@ public class App3Test {
 
         System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
 
+        printLotsToStdOut();
+
         assertThat(false, is(true));
     }
 
@@ -60,7 +63,7 @@ public class App3Test {
         List<String> linesInMemory = Collections.singletonList("HEY HEY");
         Files.write(file, linesInMemory, StandardCharsets.UTF_8);
 
-        System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
+        printLotsToStdOut();
 
         assertThat(false, is(true));
     }
@@ -71,7 +74,7 @@ public class App3Test {
         List<String> linesInMemory = Collections.singletonList("HEY HEY");
         Files.write(file, linesInMemory, StandardCharsets.UTF_8);
 
-        System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
+        printLotsToStdOut();
 
         assertThat(false, is(true));
     }

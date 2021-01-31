@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Maven on a Unix agent.
-                sh "mvn -Dmaven.test.failure.ignore=true clean verify"
+                sh "mvn -B -Dmaven.test.failure.ignore=true clean verify"
             }
 
             post {

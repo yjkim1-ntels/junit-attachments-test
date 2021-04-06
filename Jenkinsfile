@@ -6,6 +6,8 @@ pipeline {
             steps {
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean verify"
+                sh "sleep 10s"
+                sh "echo 'slept'"
             }
 
             post {

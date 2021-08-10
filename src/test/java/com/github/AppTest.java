@@ -25,9 +25,9 @@ public class AppTest {
     public void attachment() throws IOException {
         Path file = Paths.get("hello.txt");
         List<String> linesInMemory = Collections.singletonList("HEY HEY");
-        Files.write(file, linesInMemory, StandardCharsets.UTF_8);
+        //Files.write(file, linesInMemory, StandardCharsets.UTF_8);
 
-        System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
+        //System.out.println("[[ATTACHMENT|" + file.toAbsolutePath()  + "]]");
         
         assertThat(false, is(true));
     }
